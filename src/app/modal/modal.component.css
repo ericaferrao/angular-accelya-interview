@@ -2,7 +2,7 @@
   width:50%; height:50%;
   position:absolute;
    top:25%;
-  left:35%;
+  left:25%;
   
 
   /* background-color: lightgray; */
@@ -23,6 +23,10 @@ td, th{
   text-align: start;
   border: 1px solid darkgray;
   padding :10px;
+}
+
+table{
+  border-radius: 5px 5px 0px 0px;
 }
 
 html {
