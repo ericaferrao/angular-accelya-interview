@@ -1,5 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 //  import * as data from './data.json';
 @Component({
   selector: 'my-app',
@@ -13,11 +14,11 @@ export class AppComponent {
 
   constructor(private httpClient: HttpClient) {}
   ngOnInit() {
-    console.log('erica');
-    this.httpClient.get('assets/data.json').subscribe(data => {
-      console.log(data);
-      console.log('erica');
-      this.products = data;
-    });
+    // console.log(' erica');
+    // this.httpClient.get('assets/data.json').subscribe(data => {
+    //   console.log(data);
+    //   console.log('erica');
+    //   this.products = data;
+    // });
   }
 }
