@@ -56,6 +56,64 @@
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
     "selected": false
+  },
+  {
+    "itemId": 1,
+    "id": 1,
+    "productName": "Super Pump",
+    "actualPrice": 4400.0000,
+    "discountPrice": 3400.0000,
+    "stockAvailable": 3,
+    "selected": true,
+    "status" :"danger"
+  },
+  {
+    "itemId": 2,
+    "id": 2,
+    "productName": "delectus aut autem",
+    "actualPrice": 5400.0000,
+    "discountPrice": 4400.0000,
+    "stockAvailable": 8 ,
+    "selected": false,
+    "status" :"success"
+  },
+  {
+    "itemId": 3,
+    "id": 3,
+    "productName": "delectus aut autem",
+    "actualPrice": 6400.0000,
+    "discountPrice": 3400.0000,
+    "stockAvailable": 8 ,
+    "selected": false,
+    "status" :"info"
+  },
+  {
+    "itemId": 4,
+    "id": 4,
+    "productName": "delectus aut autem",
+    "actualPrice": 4400.0000,
+    "discountPrice": 3400.0000,
+    "stockAvailable": 3,
+    "selected": true,
+    "status" :"dead"
+  },
+  {
+    "itemId": 5,
+    "id": 5,
+    "productName": "delectus aut autem",
+    "actualPrice": 5400.0000,
+    "discountPrice": 4400.0000,
+    "stockAvailable": 8 ,
+    "selected": false
+  },
+  {
+    "itemId": 6,
+    "id": 6,
+    "productName": "delectus aut autem",
+    "actualPrice": 6400.0000,
+    "discountPrice": 3400.0000,
+    "stockAvailable": 8 ,
+    "selected": false
   }
   
 ]
