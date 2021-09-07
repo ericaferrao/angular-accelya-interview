@@ -15,6 +15,8 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
 
     this.products =this.product_serv.getProduct();
+
+    console.log(this.products)
   }
 
 }
