@@ -5,7 +5,7 @@
   left:35%;
   
 
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .b{
@@ -21,7 +21,7 @@ table {
 
 td, th{
   text-align: start;
-  border: 1px solid darkgray;
+  /* border: 1px solid darkgray; */
   padding :10px;
 }
 
