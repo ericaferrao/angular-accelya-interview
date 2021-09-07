@@ -2,8 +2,14 @@
 
 <!-- <app-modal><app-modal> -->
 
-  <div>
+  <div style="width:50%; height:50%;position:absolute; top:25%;
+  left:25%;
+  border:solid"> 
+
+    <button (click)="toggle_modal()">Click</button>
   </div>
+
+  <app-modal *ngIf="showModal"></app-modal>
 
 
 <app-footer></app-footer>

@@ -12,7 +12,12 @@ export class AppComponent {
 
   products: any = [];
 
+  showModal=true;
+
   constructor(private httpClient: HttpClient) {}
+  toggle_modal(){
+    this.showModal = !this.showModal
+  }
   ngOnInit() {
     // console.log(' erica');
     // this.httpClient.get('assets/data.json').subscribe(data => {

@@ -11,6 +11,8 @@ export class ProductservService {
   getProduct() {
    
     this.httpClient.get('assets/data.json').subscribe(data => {
+
+      console.log(data)
      
       this.products = data;
 
