@@ -10,9 +10,17 @@
   "stockAvailable": 8 ,
   "selected": false
 }, -->
-<div *ngFor="let product of products">
+<div >
   <table>
-    <tr>
+  <tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th> 
+  <th>Country</th>
+  <th>Country</th>
+  <th>Country</th>
+</tr>
+    <tr *ngFor="let product of products">
     <td>
     <input type="checkbox" id="product.id" name="product.productName" value="product.actualPrice">
     {{product.selected}}
