@@ -14,9 +14,17 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
 
-    this.products =this.product_serv.getProduct();
+    this.product_serv.getProduct().subscribe(data => {
 
+      console.log(data)
+     
+      this.products = data;
+      
     console.log(this.products)
+
+      
+    });;
+
   }
 
 }
