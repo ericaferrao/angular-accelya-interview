@@ -1,7 +1,54 @@
 .a{
-  width:50%; height:50%;position:absolute; top:25%;
+  width:50%; height:50%;
+  position:absolute;
+   top:25%;
   left:35%;
-  border:solid;
-  background-color: blue;
+  
+
+  background-color: lightgray;
 }
 
+.b{
+  overflow: scroll;
+  
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 25px;
+ 
+}
+
+td, th{
+  text-align: start;
+  border: 1px solid darkgray;
+  padding :10px;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.danger{
+  background: lightsalmon;
+}
+.info{
+  background: lightskyblue;
+}
+
+.success{
+  background: lightgreen;
+}
+
+.dead{
+  background: lightgray;
+}

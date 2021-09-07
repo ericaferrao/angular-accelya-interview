@@ -6,7 +6,8 @@
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 3,
-    "selected": true
+    "selected": true,
+    "status" :"danger"
   },
   {
     "itemId": 2,
@@ -15,7 +16,8 @@
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
     "stockAvailable": 8 ,
-    "selected": false
+    "selected": false,
+    "status" :"success"
   },
   {
     "itemId": 3,
@@ -24,7 +26,8 @@
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
-    "selected": false
+    "selected": false,
+    "status" :"info"
   },
   {
     "itemId": 4,
@@ -33,7 +36,8 @@
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 3,
-    "selected": true
+    "selected": true,
+    "status" :"dead"
   },
   {
     "itemId": 5,
