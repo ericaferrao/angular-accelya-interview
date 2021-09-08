@@ -35,18 +35,26 @@ export class ModalComponent implements OnInit {
     this.mymodel = newValue;
     console.log(newValue)
 
-    this.product_serv.getProduct().subscribe((data:any) => {
+   
+      this.product_serv.getProduct().subscribe((data:any) => {
 
-      console.log(data)
-
+        console.log(data)
+  
+        if(newValue.length>0){
+       
+        this.products =  data.filter(e => e.productName.includes(newValue)).sort(function(a, b){
+          return a.id - b.id;
+      });
+        }else{
+          this.products = data
+        }
+        
+      console.log(this.products)
+  
+        
+      });
     
-     
-      this.products =  data.filter(e => e.productName.includes(newValue));
-      
-    console.log(this.products)
-
-      
-    });
+   
   }
 
 }

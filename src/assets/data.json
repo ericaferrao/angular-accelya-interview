@@ -12,7 +12,7 @@
   {
     "itemId": 2,
     "id": 2,
-    "productName": "delectus aut autem",
+    "productName": "Nike",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
     "stockAvailable": 8 ,
@@ -22,7 +22,7 @@
   {
     "itemId": 3,
     "id": 3,
-    "productName": "delectus aut autem",
+    "productName": "Puma",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
@@ -32,7 +32,7 @@
   {
     "itemId": 4,
     "id": 4,
-    "productName": "delectus aut autem",
+    "productName": "Adidas",
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 3,
@@ -42,7 +42,7 @@
   {
     "itemId": 5,
     "id": 5,
-    "productName": "delectus aut autem",
+    "productName": "Zara",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
     "stockAvailable": 8 ,
@@ -51,7 +51,7 @@
   {
     "itemId": 6,
     "id": 6,
-    "productName": "delectus aut autem",
+    "productName": "Dior",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
@@ -60,7 +60,7 @@
   {
     "itemId": 1,
     "id": 1,
-    "productName": "Super Pump",
+    "productName": "Channel",
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 3,
@@ -70,7 +70,7 @@
   {
     "itemId": 2,
     "id": 2,
-    "productName": "delectus aut autem",
+    "productName": "Gucci",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
     "stockAvailable": 8 ,
@@ -80,7 +80,7 @@
   {
     "itemId": 3,
     "id": 3,
-    "productName": "delectus aut autem",
+    "productName": "Luivitton",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
@@ -90,7 +90,7 @@
   {
     "itemId": 4,
     "id": 4,
-    "productName": "delectus aut autem",
+    "productName": "Prada",
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 3,
@@ -100,7 +100,7 @@
   {
     "itemId": 5,
     "id": 5,
-    "productName": "delectus aut autem",
+    "productName": "JAquemus",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
     "stockAvailable": 8 ,
@@ -109,7 +109,7 @@
   {
     "itemId": 6,
     "id": 6,
-    "productName": "delectus aut autem",
+    "productName": "Lamcome",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
     "stockAvailable": 8 ,
