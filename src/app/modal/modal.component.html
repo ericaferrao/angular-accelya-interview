@@ -8,10 +8,9 @@ border: 1px solid green;">
 <!--  [formControl]="name" -->
 
 
-<input type="text" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
-<button (click)="refresh()">
-  <i class="fas fa-sync"></i></button>
-  <i class="fas fa-sync"></i>
+<input type="text" placeholder="Search" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
+<button (click)="refresh()">refresh</button>
+ 
 
 <div class="b"  
 style=" overflow: scroll;
