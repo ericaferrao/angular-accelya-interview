@@ -14,11 +14,15 @@ border: 1px solid green;">
 
 <div class="b"  
 style=" overflow: scroll;
-height: 300px;
-border: 1px solid blue;">
+height: calc( 41px*10 + 18px);
+padding: 0px;
+margin: 0px;">
 
   <table style="width:90%;" >
-  <tr *ngIf="products.length>0">
+  <tr style="position: sticky;
+  top: 0;
+  background: lightgrey;
+  color: white;" *ngIf="products.length>0">
   <th> <input type="checkbox" ></th>
   <th>Item ID</th>
   <th>Product Name</th> 

@@ -11,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,HttpClientModule,ReactiveFormsModule,],
   declarations: [ AppComponent, HelloComponent, ModalComponent, FooterComponent, HeaderComponent ],
