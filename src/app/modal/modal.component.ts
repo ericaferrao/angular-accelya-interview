@@ -31,6 +31,18 @@ export class ModalComponent implements OnInit {
 
   }
 
+  refresh(){
+    this.mymodel=""
+    this.product_serv.getProduct().subscribe(data => {
+
+      console.log(data)
+     
+      this.products = data;
+      
+    console.log(this.products)
+    })
+  }
+
   valuechange(newValue) {
     this.mymodel = newValue;
     console.log(newValue)

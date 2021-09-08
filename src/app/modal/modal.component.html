@@ -9,7 +9,9 @@ border: 1px solid green;">
 
 
 <input type="text" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
-<button><i class="fas fa-sync"></i></button>
+<button (click)="refresh()">
+  <i class="fas fa-sync"></i></button>
+  <i class="fas fa-sync"></i>
 
 <div class="b"  
 style=" overflow: scroll;

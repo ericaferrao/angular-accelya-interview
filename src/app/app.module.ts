@@ -10,9 +10,17 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,HttpClientModule,ReactiveFormsModule],
+  imports:      [ BrowserModule, FormsModule ,HttpClientModule,ReactiveFormsModule,],
   declarations: [ AppComponent, HelloComponent, ModalComponent, FooterComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+//   npm install @fortawesome/fontawesome-svg-core
+// npm install @fortawesome/free-brands-svg-icons
+// npm install @fortawesome/free-regular-svg-icons
+// npm install @fortawesome/free-solid-svg-icons
+// npm install @fortawesome/angular-fontawesome
+ }
