@@ -1,6 +1,10 @@
 import { Component, VERSION } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
+import { faExpand } from '@fortawesome/free-solid-svg-icons';
+
+import { faCompress } from '@fortawesome/free-solid-svg-icons';
 //  import * as data from './data.json';
 @Component({
   selector: 'my-app',
@@ -9,6 +13,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
+
+  faExpand= faExpand;
+  faCompress= faCompress;
 
   products: any = [];
 

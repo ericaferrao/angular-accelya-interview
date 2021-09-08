@@ -2,13 +2,22 @@
 
 <!-- <app-modal><app-modal> -->
 
-  <div style="width:100%;padding: 20px;border:solid ; position: fixed;
+  <div style="width:100%;padding: 20px; position: fixed;
   top: 45px;
   left: 0;
   height:calc(100% - 190px) ;
   width: 100%;"> 
 
-    <button (click)="toggle_modal()">Click</button>
+    <button   (click)="toggle_modal()"> 
+     <fa-icon  *ngIf="!showModal"
+     style="width:40px;height:40px;
+    color:grey;
+      font-size:20px;padding:10px;" [icon]="faExpand"></fa-icon>
+      <fa-icon  *ngIf="showModal"  style="width:40px;height:40px;
+      color:grey;
+        font-size:20px;padding:10px;" [icon]="faCompress"></fa-icon>
+    
+    </button>
 
     <app-modal *ngIf="showModal"></app-modal>
   </div>

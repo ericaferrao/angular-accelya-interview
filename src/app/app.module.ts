@@ -9,10 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,HttpClientModule,ReactiveFormsModule,],
+  imports:      [ BrowserModule, FormsModule ,HttpClientModule,ReactiveFormsModule,FontAwesomeModule],
   declarations: [ AppComponent, HelloComponent, ModalComponent, FooterComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ]
 })

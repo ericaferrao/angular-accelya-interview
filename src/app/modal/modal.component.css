@@ -17,6 +17,7 @@ td, th{
   text-align: start;
   border: 1px solid darkgray;
   padding :10px;
+  color: grey;
 }
 
 table{
