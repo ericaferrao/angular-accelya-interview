@@ -12,7 +12,7 @@ export class AppComponent {
 
   products: any = [];
 
-  showModal=true;
+  showModal=false;
 
   constructor(private httpClient: HttpClient) {}
   toggle_modal(){

@@ -1,5 +1,5 @@
 .headercss {
-  width: 100%;
+  /* width: 100%;
   border: solid;
   height: 100px;
   background: lightgrey;
@@ -8,5 +8,14 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  right: 0px;
+  right: 0px; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: blue;
+  background: lightgrey;
+  height: 40px;
+  color: white;
 }

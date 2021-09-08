@@ -1,18 +1,23 @@
 
+<div class="a" 
+style="padding:20px;
+height: 400px;
+border: 1px solid green;">
 
-<div class="a">
-<!-- {
-  "itemId": 2,
-  "id": 2,
-  "productName": "delectus aut autem",
-  "actualPrice": 5400.0000,
-  "discountPrice": 4400.0000,
-  "stockAvailable": 8 ,
-  "selected": false
-}, -->
-<div class="b" >
-  <table>
-  <tr>
+
+<!--  [formControl]="name" -->
+<input id="name" type="text">
+
+<input type="text" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
+{{mymodel}}
+
+<div class="b"  
+style=" overflow: scroll;
+height: 300px;
+border: 1px solid blue;">
+
+  <table style="width:90%;" >
+  <tr *ngIf="products.length>0">
   <th> <input type="checkbox" ></th>
   <th>Item ID</th>
   <th>Product Name</th> 
