@@ -28,6 +28,7 @@ export class ModalComponent implements OnInit {
   faTable =faTable;
   faAngleDown = faAngleDown;
   faAngleUp = faAngleUp;
+  faCompress= faCompress;
   mymodel
 
   constructor(public product_serv:ProductservService, public  UtilityService:UtilityService) { }
