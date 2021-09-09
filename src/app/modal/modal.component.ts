@@ -179,4 +179,10 @@ export class ModalComponent implements OnInit {
    
   }
 
+  close(){
+
+    this.UtilityService.set()
+
+  }
+
 }

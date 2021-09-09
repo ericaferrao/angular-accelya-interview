@@ -27,7 +27,7 @@ export class AppComponent {
 
   constructor(private httpClient: HttpClient, private utilityService: UtilityService) {
 
-    console.log(utilityService.get())
+   this.showModal= utilityService.get()
 
   }
   toggle_modal(){
@@ -40,5 +40,9 @@ export class AppComponent {
     //   console.log('erica');
     //   this.products = data;
     // });
+  }
+
+  ngAfterViewInit(){
+    
   }
 }
