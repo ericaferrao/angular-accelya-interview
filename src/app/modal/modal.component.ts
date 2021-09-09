@@ -41,11 +41,10 @@ export class ModalComponent implements OnInit {
 
     this.product_serv.getProduct().subscribe(data => {
 
-      console.log(data)
      
       this.products = data;
       
-    console.log(this.products)
+ 
 
       
     });
@@ -157,22 +156,22 @@ export class ModalComponent implements OnInit {
     this.mymodel=""
     this.product_serv.getProduct().subscribe(data => {
 
-      console.log(data)
+   
      
       this.products = data;
       
-    console.log(this.products)
+
     })
   }
 
   valuechange(newValue) {
     this.mymodel = newValue;
-    console.log(newValue)
+
 
    
       this.product_serv.getProduct().subscribe((data:any) => {
 
-        console.log(data)
+   
   
         if(newValue.length>0){
        
@@ -183,8 +182,7 @@ export class ModalComponent implements OnInit {
           this.products = data
         }
         
-      console.log(this.products)
-  
+
         
       });
     
