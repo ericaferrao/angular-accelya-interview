@@ -149,6 +149,11 @@ export class ModalComponent implements OnInit {
 
   refresh(){
     this.mymodel=""
+    this.productNameasc =true;
+    this.sortbyStockasc=true;
+    this.sortbyActualPriceasc=true;
+    this.sortbyDiscountasc=true;
+    this.sortbyIDasc=true
     this.product_serv.getProduct().subscribe(data => {
       this.products = data;
     })
@@ -161,7 +166,13 @@ export class ModalComponent implements OnInit {
         if(newValue.length>0){
        
         this.products =  data.filter(e => e.productName.toLowerCase( ).includes(newValue.toLowerCase( ))).sort(function(a, b){
-          return a.id - b.id;
+         
+
+          if(this.sortbyIDasc){
+            return a.id - b.id;
+          }else{
+            return b.id - a.id;
+          }
       });
         }else{
           this.products = data
