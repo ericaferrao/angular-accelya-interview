@@ -167,12 +167,8 @@ export class ModalComponent implements OnInit {
        
         this.products =  data.filter(e => e.productName.toLowerCase( ).includes(newValue.toLowerCase( ))).sort(function(a, b){
          
-
-          if(this.sortbyIDasc){
             return a.id - b.id;
-          }else{
-            return b.id - a.id;
-          }
+
       });
         }else{
           this.products = data
