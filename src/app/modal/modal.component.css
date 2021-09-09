@@ -1,6 +1,13 @@
 .a{
-  height: calc(100% - 300px);
-  width:90%;
+  /* height: calc(100% - 300px);
+  width:90%; */
+
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    background: #55555555;
+    right: 0px;
 
 }
 
