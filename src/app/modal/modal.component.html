@@ -61,22 +61,22 @@ margin: 0px;">
   </th>
   <th style="cursor:pointer;" (click)="sortbyproductName()">
     Product Name
-    <fa-icon *ngIf="!productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!productNameasc"  class="th_fa_icon"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="productNameasc"  class="th_fa_icon"  [icon]="faAngleDown"></fa-icon>
   </th> 
   <th style="cursor:pointer;" (click)="sortbyActualPrice()" >
     Actual Price
-    <fa-icon *ngIf="!sortbyActualPriceasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="sortbyActualPriceasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!sortbyActualPriceasc"  class="th_fa_icon"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyActualPriceasc"  class="th_fa_icon"  [icon]="faAngleDown"></fa-icon>
   </th>
   <th style="cursor:pointer;" (click)="sortbyDiscount()" >Discount Price
-    <fa-icon *ngIf="!sortbyDiscountasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="sortbyDiscountasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!sortbyDiscountasc"  class="th_fa_icon"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyDiscountasc"  class="th_fa_icon"  [icon]="faAngleDown"></fa-icon>
   </th>
   <th style="cursor:pointer;" (click)="sortbyStock()">
     Stock Available
-    <fa-icon *ngIf="!sortbyStockasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="sortbyStockasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!sortbyStockasc"  class="th_fa_icon"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyStockasc"  class="th_fa_icon"  [icon]="faAngleDown"></fa-icon>
  
   </th>
 </tr>
