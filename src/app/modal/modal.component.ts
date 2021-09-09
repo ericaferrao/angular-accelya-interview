@@ -22,17 +22,12 @@ export class ModalComponent implements OnInit {
  
 
   products: any = [];
-  // name = new FormControl('');
   faCoffee = faCoffee;
   faList = faList;
   faSync = faSync;
   faTable =faTable;
   faAngleDown = faAngleDown;
   faAngleUp = faAngleUp;
-
-
-  //th-list
-  //list
   mymodel
 
   constructor(public product_serv:ProductservService, public  UtilityService:UtilityService) { }
@@ -155,24 +150,14 @@ export class ModalComponent implements OnInit {
   refresh(){
     this.mymodel=""
     this.product_serv.getProduct().subscribe(data => {
-
-   
-     
       this.products = data;
-      
-
     })
   }
 
   valuechange(newValue) {
     this.mymodel = newValue;
-
-
-   
       this.product_serv.getProduct().subscribe((data:any) => {
 
-   
-  
         if(newValue.length>0){
        
         this.products =  data.filter(e => e.productName.toLowerCase( ).includes(newValue.toLowerCase( ))).sort(function(a, b){
@@ -181,9 +166,6 @@ export class ModalComponent implements OnInit {
         }else{
           this.products = data
         }
-        
-
-        
       });
     
    
