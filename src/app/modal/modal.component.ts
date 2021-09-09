@@ -9,6 +9,8 @@ import { faSync } from '@fortawesome/free-solid-svg-icons';
 import { faTable } from '@fortawesome/free-solid-svg-icons';
 
 import { faCompress } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 // https://origin.fontawesome.com/v5/cheatsheet
 @Component({
   selector: 'app-modal',
@@ -24,7 +26,8 @@ export class ModalComponent implements OnInit {
   faCoffee = faCoffee;
   faList = faList;
   faSync = faSync;
-  faTable = faTable;
+  faAngleDown = faAngleDown;
+  faAngleUp = faAngleUp;
 
 
   //th-list
