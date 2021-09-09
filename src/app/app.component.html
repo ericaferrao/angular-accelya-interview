@@ -22,5 +22,5 @@
 
 <app-footer></app-footer>
 
-<app-modal *ngIf="showModal"></app-modal>
+<app-modal  (newItemEvent)="close($event)" *ngIf="showModal"></app-modal>
 

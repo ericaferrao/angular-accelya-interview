@@ -11,6 +11,7 @@ import { faTable } from '@fortawesome/free-solid-svg-icons';
 import { faCompress } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { Output, EventEmitter } from '@angular/core';
 // https://origin.fontawesome.com/v5/cheatsheet
 @Component({
   selector: 'app-modal',
@@ -30,6 +31,8 @@ export class ModalComponent implements OnInit {
   faAngleUp = faAngleUp;
   faCompress= faCompress;
   mymodel
+
+  @Output() newItemEvent = new EventEmitter<boolean>();
 
   constructor(public product_serv:ProductservService, public  UtilityService:UtilityService) { }
 
@@ -181,7 +184,9 @@ export class ModalComponent implements OnInit {
 
   close(){
 
-    this.UtilityService.set()
+    // this.UtilityService.set()
+
+    this.newItemEvent.emit(false);
 
   }
 

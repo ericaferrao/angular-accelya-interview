@@ -43,6 +43,10 @@ export class AppComponent {
   }
 
   ngAfterViewInit(){
-    
+
+  }
+
+  close(event){
+    this.showModal=event
   }
 }
