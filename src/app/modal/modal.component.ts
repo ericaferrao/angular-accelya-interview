@@ -26,6 +26,7 @@ export class ModalComponent implements OnInit {
   faCoffee = faCoffee;
   faList = faList;
   faSync = faSync;
+  faTable =faTable;
   faAngleDown = faAngleDown;
   faAngleUp = faAngleUp;
 
