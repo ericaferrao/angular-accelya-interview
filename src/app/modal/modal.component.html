@@ -56,15 +56,19 @@ margin: 0px;">
   <!-- <th> <input type="checkbox" ></th> -->
   <th style="cursor:pointer;" (click)="sortbyID()">
     Item ID
-    <fa-icon *ngIf="sortbyIDasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="!sortbyIDasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!sortbyIDasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyIDasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
   </th>
   <th style="cursor:pointer;" (click)="sortbyproductName()">
     Product Name
-    <fa-icon *ngIf="productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
-    <fa-icon *ngIf="!productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+    <fa-icon *ngIf="!productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="productNameasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
   </th> 
-  <th style="cursor:pointer;" (click)="sortbyActualPrice()" >Actual Price</th>
+  <th style="cursor:pointer;" (click)="sortbyActualPrice()" >
+    Actual Price
+    <fa-icon *ngIf="!sortbyActualPriceasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyActualPriceasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+  </th>
   <th style="cursor:pointer;" (click)="sortbyDiscount()" >Discount Price</th>
   <th style="cursor:pointer;" (click)="sortbyStock()">Stock Available</th>
 </tr>
