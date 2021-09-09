@@ -13,9 +13,9 @@ width:90%;
   <input type="text" style="height:40px;margin:2px 5px;" placeholder="Search" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
 
   <div style="height:40px;border-radius:5px; margin:5px 5px;width:140px;background:lightgrey; color:grey;float:right;display: flex;text-align:center;">
- <fa-icon style="width:40px;height:40px;
-font-size:20px;padding:10px;"  (click)="refresh()" [icon]="faSync"></fa-icon>
- 
+    <fa-icon style="width:40px;height:40px;
+    font-size:20px;padding:10px;"  (click)="refresh()" [icon]="faSync"></fa-icon>
+    
 
 
   <fa-icon  style="width:40px;height:40px;
@@ -54,11 +54,11 @@ margin: 0px;">
   background: lightgrey;
   color: darkgrey;" *ngIf="products.length>0">
   <th> <input type="checkbox" ></th>
-  <th (click)="sortbyID()">Item ID</th>
-  <th  (click)="sortbyproductName()">Product Name</th> 
-  <th (click)="sortbyActualPrice()" >Actual Price</th>
-  <th (click)="sortbyDiscount()" >Discount Price</th>
-  <th (click)="sortbyStock()">Stock Available</th>
+  <th style="cursor:pointer;" (click)="sortbyID()">Item ID</th>
+  <th style="cursor:pointer;" (click)="sortbyproductName()">Product Name</th> 
+  <th style="cursor:pointer;" (click)="sortbyActualPrice()" >Actual Price</th>
+  <th style="cursor:pointer;" (click)="sortbyDiscount()" >Discount Price</th>
+  <th style="cursor:pointer;" (click)="sortbyStock()">Stock Available</th>
 </tr>
     <tr [ngClass]="{
       'danger':product.status === 'danger',
