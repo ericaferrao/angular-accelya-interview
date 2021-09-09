@@ -12,7 +12,16 @@ width:90%;
 
   <input type="text" style="height:40px;margin:2px 5px;" placeholder="Search" [ngModel]="mymodel" (ngModelChange)="valuechange($event)" />
 
-  <div style="height:40px;border-radius:5px; margin:5px 5px;width:140px;background:lightgrey; color:grey;float:right;display: flex;text-align:center;">
+  <div 
+  style="height:40px;
+  border-radius:5px; 
+  margin:5px 5px;
+  width:140px;
+  background:lightgrey; 
+  color:grey;
+  float:right;
+  display: flex;
+  text-align:center;">
     <fa-icon style="width:40px;height:40px;
     font-size:20px;padding:10px;"  (click)="refresh()" [icon]="faSync"></fa-icon>
     
