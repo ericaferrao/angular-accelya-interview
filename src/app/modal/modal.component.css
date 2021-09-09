@@ -56,7 +56,9 @@ html {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: #00000000;
+  border: solid;
+  visibility: collapse;
 }
 
 .danger{
