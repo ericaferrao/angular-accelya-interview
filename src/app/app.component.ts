@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 import { faExpand } from '@fortawesome/free-solid-svg-icons';
 
 import { faCompress } from '@fortawesome/free-solid-svg-icons';
+import { UtilityService } from './utility.service';
+
 //  import * as data from './data.json';
 @Component({
   selector: 'my-app',
@@ -21,7 +23,13 @@ export class AppComponent {
 
   showModal=false;
 
-  constructor(private httpClient: HttpClient) {}
+  
+
+  constructor(private httpClient: HttpClient, private utilityService: UtilityService) {
+
+    console.log(utilityService.get())
+
+  }
   toggle_modal(){
     this.showModal = !this.showModal
   }
