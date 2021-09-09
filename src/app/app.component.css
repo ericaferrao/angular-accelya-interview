@@ -7,5 +7,9 @@ my-app{
 }
 
 .btn_fa_icon{
-  
+  width:40px;
+  height:40px;
+  color:grey;
+  font-size:20px;
+  padding:10px;
 }
