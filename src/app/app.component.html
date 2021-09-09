@@ -9,13 +9,8 @@
   width: 100%;"> 
 
     <button  style="cursor:pointer;"  (click)="toggle_modal()"> 
-     <fa-icon  *ngIf="!showModal"
-     style="width:40px;height:40px;
-    color:grey;
-      font-size:20px;padding:10px;" [icon]="faExpand"></fa-icon>
-      <fa-icon  *ngIf="showModal"  style="width:40px;height:40px;
-      color:grey;
-        font-size:20px;padding:10px;" [icon]="faCompress"></fa-icon>
+    <fa-icon  *ngIf="!showModal" class="btn_fa_icon" [icon]="faExpand"></fa-icon>
+    <fa-icon  *ngIf="showModal" class="btn_fa_icon" [icon]="faCompress"></fa-icon>
     
     </button>
 
