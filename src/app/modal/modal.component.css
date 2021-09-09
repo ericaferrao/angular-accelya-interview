@@ -9,6 +9,19 @@
   
 }
 
+.icon_holder{
+  height:40px;
+  border-radius:5px; 
+  margin:5px 5px;
+  width:40px;
+  background:lightgrey; 
+  color:grey;
+  float:right;
+  display: flex;
+  text-align:center;
+  cursor:pointer;
+}
+
 table {
   border-collapse: collapse;
   border-radius: 25px;
