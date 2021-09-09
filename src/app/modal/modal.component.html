@@ -73,7 +73,12 @@ margin: 0px;">
     <fa-icon *ngIf="!sortbyDiscountasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
     <fa-icon *ngIf="sortbyDiscountasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
   </th>
-  <th style="cursor:pointer;" (click)="sortbyStock()">Stock Available</th>
+  <th style="cursor:pointer;" (click)="sortbyStock()">
+    Stock Available
+    <fa-icon *ngIf="!sortbyStockasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleUp"></fa-icon>
+    <fa-icon *ngIf="sortbyStockasc"  style="width:10px;height:10px;font-size:10px;padding:10px;"  [icon]="faAngleDown"></fa-icon>
+ 
+  </th>
 </tr>
     <tr [ngClass]="{
       'danger':product.status === 'danger',
