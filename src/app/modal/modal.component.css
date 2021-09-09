@@ -62,14 +62,14 @@ html {
 }
 
 .danger{
-  background: lightsalmon;
+  background: #f2dede;
 }
 .info{
-  background: lightskyblue;
+  background: #d9edf7;
 }
 
 .success{
-  background: lightgreen;
+  background: #DFF0D8;
 }
 
 .dead{
