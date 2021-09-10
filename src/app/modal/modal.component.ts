@@ -161,6 +161,9 @@ export class ModalComponent implements OnInit {
     this.sortbyIDasc=true
     this.product_serv.getProduct().subscribe(data => {
       this.products = data;
+
+      
+this.updatemaincheckbox()
     })
   }
 
@@ -213,13 +216,18 @@ if (item) {
   item.selected = !selected;
 }
 
-let x=true
+
+this.updatemaincheckbox()
+
+  }
+
+  updatemaincheckbox(){
+    let x=true
 
 this.products.forEach(function(obj) { x=obj.selected && x ; });
 
 if(x){this.select = true}
-
-
+    
   }
 
 }
