@@ -58,7 +58,7 @@
     /* width: 90%; */
     /* left: 5%; */
     /* top: 5%; */
-    width: 400px;
+    width: 500px;
     margin: auto;
     /* height: 450px;*/
 }
@@ -139,4 +139,29 @@ html {
   height:10px;
   font-size:10px;
   padding:10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .content_holder {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  .content_holder {
+    width: 500px;
+  }
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+  .content_holder {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .content_holder {
+    width: 90%;
+  }
 }
