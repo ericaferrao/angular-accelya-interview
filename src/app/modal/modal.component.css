@@ -239,3 +239,14 @@ background-image: linear-gradient(147deg, #bbbbbb 0%, #ffffff 74%);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.parent_display {
+  width: 20em;
+  display: flex;
+  background: white;
+  text-align: center;
+}
+.child_box {
+  flex: 1;
+  border: 1px solid #cccccc;
+}
