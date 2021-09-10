@@ -59,8 +59,11 @@
     /* left: 5%; */
     /* top: 5%; */
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
     /* height: 450px;*/
+
+   
+    margin: 90px auto auto auto;
 }
 
 
