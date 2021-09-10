@@ -213,6 +213,11 @@ if (item) {
   item.selected = !selected;
 }
 
+let x=true
+
+this.products.forEach(function(obj) { x=obj.selected && x ; if(x){this.selected = true} });
+
+
   }
 
 }
