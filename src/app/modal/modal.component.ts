@@ -198,4 +198,15 @@ export class ModalComponent implements OnInit {
 
   }
 
+  updateProduct(selected, id){
+
+    console.log("heheh", selected, id)
+
+    var item = this.products.find(x => x.id == id);
+if (item) {
+  item.selected = !selected;
+}
+
+  }
+
 }

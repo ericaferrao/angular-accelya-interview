@@ -77,7 +77,7 @@
         </td> -->
 
         <td>
-        <input type="checkbox" [checked]="product.selected" (change)="product.selected = !product.selected" /> 
+        <input type="checkbox" [checked]="product.selected" (change)="updateProduct(product.selected, product.id)" /> 
       </td>
 
 
