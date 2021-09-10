@@ -241,10 +241,12 @@ background-image: linear-gradient(147deg, #bbbbbb 0%, #ffffff 74%);
 }
 
 .parent_display {
-  width: 20em;
+  width: 100%;
   display: flex;
   background: white;
   text-align: center;
+  height: 30px;
+  margin: 10px;
 }
 .child_box {
   flex: 1;
