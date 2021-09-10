@@ -162,8 +162,9 @@ export class ModalComponent implements OnInit {
     this.product_serv.getProduct().subscribe(data => {
       this.products = data;
 
+      this.select=false
       
-this.updatemaincheckbox()
+
     })
   }
 
