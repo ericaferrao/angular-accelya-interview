@@ -76,9 +76,16 @@
        
         </td> -->
 
-        <td>
+        <td >
+
+        <label class="container">
         <input type="checkbox" [checked]="product.selected" (change)="updateProduct(product.selected, product.id)" /> 
+
+        <span class="checkmark"></span>
+      </label>
       </td>
+
+      
 
 
           <td>
