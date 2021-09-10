@@ -14,7 +14,7 @@
         <fa-icon style="width:40px;height:40px;font-size:20px;padding:10px;" (click)="close()" [icon]="faCompress">
         </fa-icon>
 
-        <!-- <fa-icon  style="width:40px;height:40px;font-size:20px;padding:10px;"  [icon]="faTable"></fa-icon> -->
+      
       </div>
 
 
@@ -22,7 +22,7 @@
     </div>
 
 
-    <!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
+  
 
 
     <div class="b" style=" overflow: scroll;
@@ -35,7 +35,10 @@
       top: 0;
       background: #F7F7F8;
       color: #f5f5f5;" *ngIf="products.length>0">
-          <!-- <th> <input type="checkbox" ></th> -->
+
+      <th>        <input type="checkbox" [checked]="select" (change)="(select)" /> 
+      </th>
+      
           <th  (click)="sortbyID()">
             Item ID
             <fa-icon *ngIf="!sortbyIDasc" class="th_fa_icon" [icon]="faAngleUp"></fa-icon>
@@ -72,6 +75,8 @@
         <input type="checkbox" id="product.id" name="product.productName" value="product.actualPrice">
        
         </td> -->
+
+        <input type="checkbox" [checked]="product.selected" (change)="product.selected = !product.selected" /> 
           <td>
             {{product.id}}
           </td>

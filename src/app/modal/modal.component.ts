@@ -31,6 +31,7 @@ export class ModalComponent implements OnInit {
   faAngleUp = faAngleUp;
   faCompress= faCompress;
   mymodel
+  select= false;
 
   @Output() newItemEvent = new EventEmitter<boolean>();
 
