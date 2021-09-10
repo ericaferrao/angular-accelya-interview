@@ -190,5 +190,12 @@ export class ModalComponent implements OnInit {
     this.newItemEvent.emit(false);
 
   }
+  selectallUpdate(value:boolean){
+
+    this.products
+
+    this.products.forEach(function(obj) { obj.selected=value });
+
+  }
 
 }
