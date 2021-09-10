@@ -192,7 +192,7 @@ export class ModalComponent implements OnInit {
   }
   selectallUpdate(value:boolean){
 
-    this.select= !value
+    this.select= value
 
     console.log("heheh", value)
 

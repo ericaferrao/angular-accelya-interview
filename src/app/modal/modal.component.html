@@ -36,7 +36,7 @@
       background: #F7F7F8;
       color: #f5f5f5;" *ngIf="products.length>0">
 
-      <th>        <input type="checkbox" [checked]="select" (change)="selectallUpdate(select)" /> 
+      <th>        <input type="checkbox" [checked]="select" (change)="selectallUpdate(!select)" /> 
       </th>
       
           <th  (click)="sortbyID()">
