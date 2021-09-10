@@ -204,6 +204,10 @@ export class ModalComponent implements OnInit {
 
     console.log("heheh", selected, id)
 
+    if(selected){
+      this.select=false
+    }
+
     var item = this.products.find(x => x.id == id);
 if (item) {
   item.selected = !selected;
