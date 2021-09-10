@@ -215,7 +215,7 @@ if (item) {
 
 let x=true
 
-this.products.forEach(function(obj) { x=obj.selected && x ; if(x){this.selected = true} });
+this.products.forEach(function(obj) { x=obj.selected && x ; if(x){this.select = true} });
 
 
   }
