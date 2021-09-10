@@ -194,7 +194,7 @@ export class ModalComponent implements OnInit {
 
     this.products
 
-    this.products.forEach(function(obj) { obj.selected=value });
+    this.products.forEach(function(obj) { obj.selected=!value });
 
   }
 
