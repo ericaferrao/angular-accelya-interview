@@ -71,11 +71,33 @@ table {
  
 }
 
-td, th{
-  text-align: start;
+td{
+  /* text-align: start;
   border: 1px solid darkgray;
   padding :10px;
-  color: grey;
+  color: grey; */
+
+  text-align: start;
+    border: 1px solid darkgray;
+    padding: 6px;
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+th{
+  /* text-align: start;
+  border: 1px solid darkgray;
+  padding :10px;
+  color: grey; */
+
+  text-align: start;
+    border: 1px solid darkgray;
+    padding: 6px;
+    color: grey;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: lighter;
 }
 
 table{
