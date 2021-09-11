@@ -2,29 +2,28 @@
 
 <!-- <app-modal><app-modal> -->
 
-  <div style="width: 100%;
-  padding: 20px;
-  position: fixed;
-  top: 45px;
+<div
+  style="width: 100%;
+  position: absolute;
+  top: 40px;
   left: 0;
   /* height: calc(100% - 190px); */
   height: 100%;
   width: 100%;
-  background-image: url(https://w3.accelya.com/wp-content/uploads/2021/08/Accelya_IndustrySolutions_Homepage_1720x1080_Getty-Images-942985298_RT.jpg);"> 
+  background-image: url(https://w3.accelya.com/wp-content/uploads/2021/08/Accelya_IndustrySolutions_Homepage_1720x1080_Getty-Images-942985298_RT.jpg);">
 
-    <button  style="cursor:pointer;"  (click)="toggle_modal()"> 
+  <button  style="cursor:pointer;"  (click)="toggle_modal()">
     <fa-icon  *ngIf="!showModal" class="btn_fa_icon" [icon]="faExpand"></fa-icon>
     <fa-icon  *ngIf="showModal"  class="btn_fa_icon" [icon]="faCompress"></fa-icon>
     
     </button>
 
-    <!-- <app-modal *ngIf="showModal"></app-modal> -->
-  </div>
+  <!-- <app-modal *ngIf="showModal"></app-modal> -->
+</div>
 
- 
+
 
 
 <app-footer></app-footer>
 
-<app-modal  (newItemEvent)="close($event)" *ngIf="showModal"></app-modal>
-
+<app-modal (newItemEvent)="close($event)" *ngIf="showModal"></app-modal>
