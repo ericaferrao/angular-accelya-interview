@@ -32,6 +32,9 @@ export class ModalComponent implements OnInit {
   faCompress= faCompress;
   mymodel
   select= false;
+  index_first=1
+  index_last =12
+  length = 12
 
   @Output() newItemEvent = new EventEmitter<boolean>();
 

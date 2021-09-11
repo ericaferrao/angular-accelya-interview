@@ -58,8 +58,8 @@
     "selected": false
   },
   {
-    "itemId": 1,
-    "id": 1,
+    "itemId": 7,
+    "id": 7,
     "productName": "Channel",
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
@@ -68,8 +68,8 @@
     "status" :"danger"
   },
   {
-    "itemId": 2,
-    "id": 2,
+    "itemId": 8,
+    "id": 8,
     "productName": "Gucci",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
@@ -78,8 +78,8 @@
     "status" :"success"
   },
   {
-    "itemId": 3,
-    "id": 3,
+    "itemId": 9,
+    "id": 9,
     "productName": "Luivitton",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
@@ -88,8 +88,8 @@
     "status" :"info"
   },
   {
-    "itemId": 4,
-    "id": 4,
+    "itemId": 10,
+    "id": 10,
     "productName": "Prada",
     "actualPrice": 4400.0000,
     "discountPrice": 3400.0000,
@@ -98,8 +98,8 @@
     "status" :"dead"
   },
   {
-    "itemId": 5,
-    "id": 5,
+    "itemId": 11,
+    "id": 11,
     "productName": "JAquemus",
     "actualPrice": 5400.0000,
     "discountPrice": 4400.0000,
@@ -108,8 +108,8 @@
   },
   
   {
-    "itemId": 6,
-    "id": 6,
+    "itemId": 12,
+    "id": 12,
     "productName": "Lamcome",
     "actualPrice": 6400.0000,
     "discountPrice": 3400.0000,
