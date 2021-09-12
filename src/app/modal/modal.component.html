@@ -121,8 +121,10 @@
 
       <select  id="power" required
       [(ngModel)]="pow" name="power">
-<option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
-</select>
+      <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+      </select>
+      <span class="text_desc">{{' records per page.'}}</span>
+
     </div>
 
    
