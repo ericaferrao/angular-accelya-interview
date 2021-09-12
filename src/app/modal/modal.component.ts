@@ -75,6 +75,8 @@ export class ModalComponent implements OnInit {
     });
     }
 
+    this.setIndex();
+
    
   }
 
@@ -250,10 +252,12 @@ if(x){this.select = true}
     this.length = this.products.length
 
     let first_element = this.products.getJSONObject(0);
-    this.index_first= first_element.getInt("id");
+    this.index_first= first_element.getInt("itemId");
 
     let secondary_element = this.products.getJSONObject(this.length-1);
-    this.index_last= secondary_element.getInt("id");
+    this.index_last= secondary_element.getInt("itemId");
+
+    console.log(this.index_first, this.index_last, this.length )
    
   }
 
