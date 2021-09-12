@@ -38,6 +38,9 @@ export class ModalComponent implements OnInit {
 
   @Output() newItemEvent = new EventEmitter<boolean>();
 
+  powers = [1, 5, 10];
+  pow=this.powers[0]
+
   constructor(public product_serv:ProductservService, public  UtilityService:UtilityService) { }
 
   ngOnInit() {
@@ -180,6 +183,7 @@ export class ModalComponent implements OnInit {
   }
 
   valuechange(newValue) {
+    let scope= this
     this.mymodel = newValue;
       this.product_serv.getProduct().subscribe((data:any) => {
 
@@ -190,14 +194,16 @@ export class ModalComponent implements OnInit {
             return a.id - b.id;
 
       });
+      this.setIndex();
         }else{
           this.products = data
+          this.setIndex();
 
          
         }
-      });
+      } );
 
-      this.setIndex();
+     
     
    
   }
@@ -251,11 +257,23 @@ if(x){this.select = true}
     // index_last =0
     this.length = this.products.length
 
-    let first_element = this.products.getJSONObject(0);
-    this.index_first= first_element.getInt("itemId");
+    // let first_element = this.products[0];
+    // this.index_first= first_element.itemId;
 
-    let secondary_element = this.products.getJSONObject(this.length-1);
-    this.index_last= secondary_element.getInt("itemId");
+    // let secondary_element = this.products[this.length-1];
+    // this.index_last= secondary_element.itemId;
+
+   if(this.length>0){
+    this.index_first= 1;
+
+    this.index_last= this.length;
+   }else if(this.length<=0){
+    this.index_first= 0;
+    this.length =0
+
+    this.index_last= 0;
+   }
+   
 
     console.log(this.index_first, this.index_last, this.length )
    
