@@ -255,3 +255,7 @@ background-image: linear-gradient(147deg, #bbbbbb 0%, #ffffff 74%);
   flex: 1;
   border: 1px solid #cccccc;
 }
+
+.text_desc{
+  color: grey;
+}

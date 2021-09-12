@@ -32,9 +32,9 @@ export class ModalComponent implements OnInit {
   faCompress= faCompress;
   mymodel
   select= false;
-  index_first=1
-  index_last =12
-  length = 12
+  index_first=0
+  index_last =0
+  length = this.products.length
 
   @Output() newItemEvent = new EventEmitter<boolean>();
 
@@ -46,6 +46,10 @@ export class ModalComponent implements OnInit {
 
      
       this.products = data;
+
+      this.setIndex();
+
+
       
  
 
@@ -165,6 +169,8 @@ export class ModalComponent implements OnInit {
     this.product_serv.getProduct().subscribe(data => {
       this.products = data;
 
+      this.setIndex();
+
       this.select=false
       
 
@@ -184,8 +190,12 @@ export class ModalComponent implements OnInit {
       });
         }else{
           this.products = data
+
+         
         }
       });
+
+      this.setIndex();
     
    
   }
@@ -233,5 +243,20 @@ this.products.forEach(function(obj) { x=obj.selected && x ; });
 if(x){this.select = true}
     
   }
+
+  setIndex(){
+    // index_first=0
+    // index_last =0
+    this.length = this.products.length
+
+    let first_element = this.products.getJSONObject(0);
+    this.index_first= first_element.getInt("id");
+
+    let secondary_element = this.products.getJSONObject(this.length-1);
+    this.index_last= secondary_element.getInt("id");
+   
+  }
+
+
 
 }
