@@ -81,11 +81,14 @@ td{
   color: grey; */
 
   text-align: start;
-    border: 1px solid darkgray;
+    /* border: 1px solid darkgray; */
+    border-bottom: 2px solid darkgray;
+    border-right: 2px solid darkgray;
     padding: 6px;
     color: grey;
     font-size: 12px;
     cursor: pointer;
+   
 }
 
 th{
@@ -95,7 +98,9 @@ th{
   color: grey; */
 
   text-align: start;
-    border: 1px solid darkgray;
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  border-right: 2px solid rgb(192, 191, 191);
     padding: 6px;
     color: grey;
     font-size: 14px;
@@ -106,6 +111,20 @@ th{
 table{
   border-radius: 5px 5px 0px 0px;
 }
+
+
+
+table th:first-child,
+table td:first-child {
+  /* Apply a left border on the first <td> or <th> in a row */
+  border-left: 2px solid darkgray;
+}
+
+/* table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #edecec;
+} */
 
 html {
   overflow: scroll;
