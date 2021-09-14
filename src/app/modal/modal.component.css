@@ -110,11 +110,7 @@ th{
 
 }
 
-table thead th {
-  position: sticky;
-  top: 0;
-  background-color: purple;
-}
+
 
 table{
   border-radius: 5px 5px 0px 0px;
